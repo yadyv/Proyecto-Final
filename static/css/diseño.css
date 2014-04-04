@@ -1,0 +1,25 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	background: black;
+}
+h1{
+	color: white;
+	font-family: arial;
+	text-align: center;
+	width: 100%;
+}
+h4 a{
+	color: white;
+	font-family: arial;
+	text-decoration: none;
+} 
+.jugador{
+	
+	text-align: center;
+	font-family: verdana;
+	width: 20%;
+	margin: 15px;
+	margin-left: 40%;
+	color: white;
+}
