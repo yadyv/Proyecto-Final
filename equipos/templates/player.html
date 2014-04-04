@@ -1,0 +1,24 @@
+<div class="container">
+{% block header %}
+    <h1>{{ jugador.nombreJugador }}</h1>
+{% endblock %}
+
+{% block content %}
+
+    <div clas="rom">
+    <img width="300" height="300" src='{{ MEDIA_URL }}{{ jugador.fotos }}'></img>
+
+    <h2>{{ jugador.posicion | title }}</h2>
+    <p>Equipo: {{ jugador.equipo | title }}</p>
+    <p>Goles: {{ jugador.goles | title }}</p>
+    <p>Pie: {{ jugador.pieHabil | title }}</p>
+    <p>Estatura {{ jugador.estatura | title }}</p>
+    <p>targeta amarilla: {{ jugador.tergetaAmarilla | title }}</p>
+    <p>targeta roga: {{ jugador.tergetaRoja | title }}</p>
+    <p>lesionado: {{ jugador.lesionado | title }}</p>
+    <p>titula: {{ jugador.titular | title }}</p>
+       
+
+    </div>
+</div> <!-- /container -->
+{% endblock %}

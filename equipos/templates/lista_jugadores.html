@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang = es>
+ <head>
+   <meta charset="utf-8"/>
+    <title>Mundial de Futbol 2014</title>
+    <link rel ='stylesheet' href='{{ STATIC_URL }}css/diseño.css'>
+ </head>
+
+<h1>JUGADORES</h1>
+{% block content %}
+       {% for jugador in object_list %}
+       <div class="jugador">
+                <img width="120" height="120"  src='{{ MEDIA_URL }}{{ jugador.fotos }}'></img>
+                <h4><a href='../player/{{ jugador.id}}/player.html '>{{ jugador }}</a></h4>
+                <p>{{ jugador.equipo }}</p>
+        </div>
+       {% endfor %}
+   {% endblock %}
